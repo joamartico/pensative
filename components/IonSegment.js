@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const IonSegment = ({ value, onChange, segments, id }) => {
+const IonSegment = ({ value, onChange, segments, id, style }) => {
 	useEffect(() => {
 		const segmentEl = document.getElementById(id);
 		segmentEl.addEventListener("ionChange", onChange);
@@ -15,7 +15,7 @@ const IonSegment = ({ value, onChange, segments, id }) => {
 		<ion-segment
 			id={id}
 			value={value}
-			style={{ margin: 15, width: "calc(100% - 30px)" }}
+			style={style}
 		>
 			{segments.map((segment) => (
 				<ion-segment-button value={segment}>

@@ -1,16 +1,33 @@
-
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import ThinkingTitle from "../components/ThinkingTitle";
+import ThinkingTextArea from '../components/ThinkingTextArea';
 
 const Debates = () => {
-    console.log("SE EJECUTO EL LOG")
-    useEffect(() => {
-        console.log("CARGO EL EFECTO")
-    }, [])
-    return (
-        <ion-content>
-            DEBATES
-        </ion-content>
-    )
-}
+	const editable = true
+	
+	return (
+		<>
+			<ion-header>
+				<ion-toolbar>
+					<ion-buttons slot="start">
+						<ion-back-button
+							defaultHref="algo"
+							default-href="home"
+						/>
+					</ion-buttons>
 
-export default Debates
+					<ion-title>title</ion-title>
+				</ion-toolbar>
+			</ion-header>
+
+			<ion-content style={{ padding: 20 }}>
+				<div style={{ padding: 20, height: "100vh", width: "100vw" }}>
+					
+					hola
+				</div>
+			</ion-content>
+		</>
+	);
+};
+
+export default Debates;

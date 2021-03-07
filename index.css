@@ -1,21 +1,35 @@
-ion-app.platform-ios12,
-.ios,
+ion-app,
+.ios
 ion-content {
 	pointer-events: auto !important;
 	-webkit-overflow-scrolling: touch !important;
 }
 
+ion-list {
+	padding-bottom: calc(70px + env(safe-area-inset-top)) !important;
+}
+
 :root {
 	--ion-background-color: #f6f6f6;
 
-	/* --ion-color-primary: #4da9f5; */
-	/* --ion-color-primary: #8cc7f8; */
-	/* --ion-color-primary: #378ed9; muy azul */
-	--ion-color-primary: #629dca;
-	--ion-color-primary-shade: #177dca;
-	--ion-color-primary-tint: #59b3f8;
-}
 
+	/* GRIS AZULADO  (muy bueno) */
+	--ion-color-primary: #629dca;
+	--ion-color-primary-shade: #629dca;
+
+	/* AZUL CIELO  */
+	/* --ion-color-primary: #177dca;
+	--ion-color-primary-shade: #177dca; */
+
+	/* MOSTAZA  */
+	/* --ion-color-primary: #F0CA5F;
+	--ion-color-primary-shade: #F0CA5F; */
+
+	/* MOSTAZA  */
+	/* --ion-color-primary: #dabb69;
+	--ion-color-primary-shade: #dbb857; */
+
+}
 
 ion-tab-bar {
 	position: absolute;
@@ -23,37 +37,34 @@ ion-tab-bar {
 	left: 0;
 	width: 100%;
 
-	background: #fff6 ;
-	backdrop-filter: blur(16px) ;
+	background: #fff6;
+	backdrop-filter: blur(16px);
 }
 
 ion-tab-button {
 	background: none;
 }
 
-
 ion-searchbar {
 	--cancel-button-color: #3880ff !important;
 }
 
 ion-fab {
-	bottom: calc(50px + 10px);
-	margin-bottom: var(--ion-safe-area-top);
+	bottom: calc(50px + 20px + env(safe-area-inset-top) * 0.7);
 }
 
-
-
-ion-icon {
+.ios ion-icon {
 	font-size: 24px;
 	padding-left: 0 !important;
 	margin-left: 0 !important;
+	display: block !important;
 }
 
-input {
+.ios ion-searchbar input {
 	padding-left: 32px !important ;
 }
 
-ion-title {
+.ios ion-title {
 	position: absolute;
 }
 
@@ -73,9 +84,30 @@ ion-title {
 }
 
 
-ion-segment {
-	/* position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 10px; */
+.no-border ion-toolbar {
+	--border-width: 0px !important;
+}
+
+
+
+
+ion-back-button {
+	color: var(--ion-color-primary);
+}
+
+/* ion-back-button, ion-buttons, ion-icon, ion-header, ion-toolbar {
+	display: block !important;
+} */
+
+/* .header-md::after {
+	display: block !important;
+} */
+
+.safe-padding {
+	padding-top: env(safe-area-inset-top) !important;
+}
+
+.content {
+	padding-top: 200px;
+	padding: 20px !important;
 }

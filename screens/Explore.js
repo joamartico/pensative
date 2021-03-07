@@ -34,24 +34,23 @@ const Explore = () => {
 					<ion-toolbar>
 						<ion-title size="large">Explore</ion-title>
 					</ion-toolbar>
-					<ion-toolbar>
-						<IonSearchbar
-							onChange={(e) => console.log(e.detail.value)}
-							id="exploreSearch"
-						/>
-					</ion-toolbar>
 				</ion-header>
 
-				{thoughts.map((thought) => (
-					<Card title={thought.title} author={thought.author} />
-				))}
-				{console.log(thoughts)}
+				<IonSearchbar
+					onChange={(e) => console.log(e.detail.value)}
+					id="exploreSearch"
+				/>
 
-				<ion-fab vertical="bottom" horizontal="end" slot="fixed">
-					<ion-fab-button>
-						<ion-icon style={{fontSize: 40}} name="thought" />
-					</ion-fab-button>
-				</ion-fab>
+
+				<ion-list>
+				<Card title={"thought.title"} author={"thought.author"} id="1" />
+
+					{thoughts.map((thought) => (
+						<Card title={thought.title} author={thought.author} id={thought.id} />
+					))}
+				</ion-list>
+
+				
 			</ion-content>
 		</>
 	);

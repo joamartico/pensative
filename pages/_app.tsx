@@ -18,11 +18,32 @@ import "@ionic/core/css/flex-utils.css";
 import "@ionic/core/css/display.css";
 import "../index.css";
 import Head from "next/head";
+import Test from '../screens/Test';
 
 function MyApp({ Component, pageProps }) {
+	console.log("NO UseEffect")
+
 	useEffect(() => {
 		ionDefineCustomElements(window);
+
+		// customElements.get('test-page') || customElements.define('test-page', Test);
+
+		console.log("_app UseEffect")
+
+		// if ('serviceWorker' in navigator) {
+		// 	window.addEventListener('load', function () {
+		// 	  navigator.serviceWorker
+		// 		.register('sw.js')
+		// 		.then(function (info) {
+		// 		  // console.info('Registered service-worker', info);
+		// 		})
+		// 		.catch(function (error) {
+		// 		  console.info('Failed to register service-worker', error);
+		// 		});
+		// 	});
+		//   }
 	});
+
 
 	return (
 		<>
@@ -184,14 +205,11 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 
 			<ion-app>
-				{/* <ion-react-router>
-        <IonSplitPane contentId="main"/>
-          <IonRouterOutlet id="main"/>
-            <Route path="/tabs" render={() => <Tabs />} />
-            <Route exact path="/" render={() => <Redirect to="/tabs" />} />
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </ion-react-router> */}
+
+
+				{/* <ion-router use-hash={false}>
+					<ion-route url="/test" component="test-page" />
+				</ion-router> */}
 
 				<Component {...pageProps} />
 			</ion-app>

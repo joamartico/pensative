@@ -1,11 +1,11 @@
 
-import { Card } from '../constants/styledComponents';
+
 
 const onboarding = () => {
     return (
-        <Card>
+        <ion-content>
             <p>onboarding</p>
-        </Card>
+        </ion-content>
     )
 }
 

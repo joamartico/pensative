@@ -1,11 +1,23 @@
-// import { redirect } from "next/dist/next-server/server/api-utils";
-import useRouter from "next/router";
+import { useState, useEffect } from "react";
+
 import BottomTabs from "../components/BottomTabs";
+import FloatingButton from "../components/FloatingButton";
+
+
+
 
 const index = () => {
+
 	return (
 		<>
-			<BottomTabs />
+			<BottomTabs /> 
+			
+			<FloatingButton />
+
+			
+
+
+
 		</>
 	);
 };

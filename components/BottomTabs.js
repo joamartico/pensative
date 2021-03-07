@@ -1,16 +1,15 @@
-
 import Explore from "../screens/Explore";
 import Debates from "../screens/Debates";
 import Me from "../screens/Me";
 
 
+
 const BottomTabs = () => {
 	return (
 		<ion-tabs>
-
 			<ion-tab-bar slot="bottom" transluscent={true}>
 				<ion-tab-button tab="explore" href="/explore" name="explore">
-					<ion-icon name="parthenon"/>
+					<ion-icon name="parthenon" />
 					<ion-label>Explore</ion-label>
 				</ion-tab-button>
 
@@ -36,7 +35,6 @@ const BottomTabs = () => {
 			<ion-tab tab="debates">
 				<Debates />
 			</ion-tab>
-
 		</ion-tabs>
 	);
 };
