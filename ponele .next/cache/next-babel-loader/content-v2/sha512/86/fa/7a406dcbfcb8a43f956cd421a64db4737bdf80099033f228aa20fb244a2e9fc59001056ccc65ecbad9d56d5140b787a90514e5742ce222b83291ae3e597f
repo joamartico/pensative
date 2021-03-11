@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport { Card } from '../constants/styledComponents';\n\nconst onboarding = () => {\n  return /*#__PURE__*/_jsx(Card, {\n    children: /*#__PURE__*/_jsx(\"p\", {\n      children: \"onboarding\"\n    })\n  });\n};\n\nexport default onboarding;","map":null,"metadata":{},"sourceType":"module"}

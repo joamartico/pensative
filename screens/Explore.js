@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import IonSearchbar from "../components/IonSearchbar";
 import Card from "../components/Card";
 import { db } from "../firebase";
+import { defineCustomElements as ionDefineCustomElements } from "@ionic/core/loader";
+
 
 const thoughtsRef = db.collection("thoughts");
 
@@ -41,9 +43,18 @@ const Explore = () => {
 					id="exploreSearch"
 				/>
 
+				{/* <div onClick={() => {
+					console.log("apretado")
+					ionDefineCustomElements("")
+				}}>
+
+				<ion-button>window on/off</ion-button> 
+				</div> */}
+				
+
 
 				<ion-list>
-				<Card title={"thought.title"} author={"thought.author"} id="1" />
+				<Card title={"Example"} author={"author"} id="1" />
 
 					{thoughts.map((thought) => (
 						<Card title={thought.title} author={thought.author} id={thought.id} />

@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport { useEffect } from 'react';\n\nconst Debates = () => {\n  return /*#__PURE__*/_jsx(\"ion-content\", {\n    children: \"DEBATES\"\n  });\n};\n\nexport default Debates;","map":null,"metadata":{},"sourceType":"module"}

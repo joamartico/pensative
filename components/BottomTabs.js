@@ -1,6 +1,7 @@
 import Explore from "../screens/Explore";
 import Debates from "../screens/Debates";
 import Me from "../screens/Me";
+import Thinking from '../screens/Thinking';
 
 
 
@@ -35,6 +36,10 @@ const BottomTabs = () => {
 			<ion-tab tab="debates">
 				<Debates />
 			</ion-tab>
+
+			{/* <ion-tab tab="thinking" >
+				<Thinking />
+			</ion-tab> */}
 		</ion-tabs>
 	);
 };

@@ -1,1 +1,0 @@
-{"ast":null,"code":"import styled from 'styled-components';","map":{"version":3,"sources":["/Users/Joa/Desktop/React/NextJs/pensative/constants/styledComponents.js"],"names":["styled"],"mappings":"AACA,OAAOA,MAAP,MAAmB,mBAAnB","sourcesContent":["\nimport styled from 'styled-components';\n\n\n\n"]},"metadata":{},"sourceType":"module"}

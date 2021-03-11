@@ -25,12 +25,12 @@ const thinking = () => {
 			<ion-content style={{ padding: 20 }}>
 				<div style={{ padding: 20, height: "100vh", width: "100vw" }}>
 					<ThinkingTitle
-						value={title}
+						value={"Title"}
 						placeholder="Title"
 						editable={editable}
 					/>
 					<ThinkingTextArea
-						value="Text"
+						value="Description"
 						placeholder="Write what you are thinking"
 						editable={editable}
 					/>

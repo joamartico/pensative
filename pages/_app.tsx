@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { defineCustomElements as ionDefineCustomElements } from "@ionic/core/loader";
 
+
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/core/css/core.css";
 
@@ -19,12 +20,14 @@ import "@ionic/core/css/display.css";
 import "../index.css";
 import Head from "next/head";
 import Test from '../screens/Test';
+import Routes from "../components/Routes"
+
 
 function MyApp({ Component, pageProps }) {
 	console.log("NO UseEffect")
 
 	useEffect(() => {
-		ionDefineCustomElements(window);
+		ionDefineCustomElements(window)
 
 		// customElements.get('test-page') || customElements.define('test-page', Test);
 
@@ -207,9 +210,7 @@ function MyApp({ Component, pageProps }) {
 			<ion-app>
 
 
-				{/* <ion-router use-hash={false}>
-					<ion-route url="/test" component="test-page" />
-				</ion-router> */}
+				{/* <Routes /> */}
 
 				<Component {...pageProps} />
 			</ion-app>
